@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'gcc -o main main.c'
+                sh './main'
             }
         }
     }
