@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'ls'
-                sh 'ls -la'
+                sh 'gcc -o main main.c'
             }
         }
     }
